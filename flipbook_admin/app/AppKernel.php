@@ -15,6 +15,8 @@ class AppKernel extends Kernel
             new Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+            new Symfony\Bundle\AsseticBundle\AsseticBundle(),
+            new FOS\UserBundle\FOSUserBundle(),
             new AppBundle\AppBundle(),
         ];
 
@@ -25,7 +27,6 @@ class AppKernel extends Kernel
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
             $bundles[] = new JavierEguiluz\Bundle\EasyAdminBundle\EasyAdminBundle();
         }
-
         return $bundles;
     }
 

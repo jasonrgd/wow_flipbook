@@ -34,51 +34,30 @@
         <script src="{{ asset('js/vendor/modernizr-2.7.1.min.js') }}"></script>
     </head>
     <body>
-        <div class="book_container">
-            {% block body %}{% endblock %}
+        <div>
+            {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
+                <a href="{{ path('fos_user_security_logout') }}">
+                    {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+                </a>
+            {% else %}
+                <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
+            {% endif %}
         </div>
 
-        {% block javascripts %}{% endblock %}
+            {% if app.request.hasPreviousSession %}
+                {% for type, messages in app.session.flashbag.all() %}
+                    {% for message in messages %}
+                        <div class="flash-{{ type }}">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                {% endfor %}
+            {% endif %}
 
-        <script src="{{ asset('js/vendor/jquery-1.11.2.min.js') }}"></script>
-        <script src="{{ asset('js/helper.js') }}"></script>
-        <script src="{{ asset('wow_book/wow_book.min.js') }}"></script>
-
-        <script type="text/javascript">
-            $(function(){
-                var bookOptions = {
-                    height   : 500
-                    ,width    : 800
-                    // ,maxWidth : 800
-                    ,maxHeight : 600
-
-                    ,centeredWhenClosed : true
-                    ,hardcovers : true
-                    ,numberedPages : [1,-2]
-
-                    ,toolbar : "first, back, next, last, toc, zoomin, zoomout, slideshow, flipsound, fullscreen, thumbnails"
-                    ,thumbnailsPosition : 'bottom'
-                    ,responsiveHandleWidth : 50
-
-                    ,container: window
-                    ,containerPadding: "20px"
-                    ,toolbarPosition: "top" // default "bottom"
-
-                    // ,toc: [                      // table of contents in the format
-                    // 	[ "Item description", 1 ],  // [ "title", page number ]
-                    // 	[ "Go to codecanyon.net", "http://codecanyon.net" ] // or [ "title", "url" ]
-                    // ]
-                };
-
-                $('#book').wowBook( bookOptions ); // create the book
-
-                var book=$.wowBook("#book"); // get book object instance
-
-                $("#cover").click(function(){
-                    book.advance();
-                });
-            })
-        </script>
-
+        <div>
+            {% block fos_user_content %}
+            {% endblock fos_user_content %}
+        </div>
     </body>
 </html>
