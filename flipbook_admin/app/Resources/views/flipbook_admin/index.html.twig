@@ -1,7 +1,20 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <em>Flipbook Default </em>
-    <div id="example"></div>
+
+    {% for flipbook in flipbooks %}
+
+        <div>
+
+
+            <a href="/flipbook/1">
+                <img src="/print_issues/august_issues/August_Page_01.jpg" width="100px"/>
+            </a>
+
+
+
+        </div>
+
+    {% endfor %}
 
 {% endblock %}
