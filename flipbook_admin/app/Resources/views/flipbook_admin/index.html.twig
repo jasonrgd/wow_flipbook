@@ -1,20 +1,22 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+<div class="book_container">
+
+    <h1> Lawyers Weekly Print Issues Flipbook</h1>
 
     {% for flipbook in flipbooks %}
 
-        <div>
+        <div class="flipbook-holder">
 
 
-            <a href="/flipbook/1">
-                <img src="/print_issues/august_issues/August_Page_01.jpg" width="100px"/>
+            <a href="/flipbook/{{ flipbook.id }}">
+                <img src="/print_issues/{{ flipbook.name }}/{{ flipbook.image }}1.jpg" width="200px"/>
+                <span class="flipbook-title"> {{ flipbook.name|replace({"_":" "})|capitalize }}</span>
             </a>
-
-
 
         </div>
 
     {% endfor %}
-
+</div>
 {% endblock %}

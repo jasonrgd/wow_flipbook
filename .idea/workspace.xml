@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ba08b99-db79-4418-9222-125a3c895a82" name="Default" comment="database requests working">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flipbook_admin/src/AppBundle/Entity/Group.php" />
+    <list default="true" id="8ba08b99-db79-4418-9222-125a3c895a82" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flipbook_admin/app/Resources/views/flipbook_admin/flipbook.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flipbook_admin/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/flipbook_admin/app/Resources/views/base.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flipbook_admin/app/Resources/views/flipbook_admin/index.html.twig" afterPath="$PROJECT_DIR$/flipbook_admin/app/Resources/views/flipbook_admin/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flipbook_admin/app/config/routing.yml" afterPath="$PROJECT_DIR$/flipbook_admin/app/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flipbook_admin/app/config/security.yml" afterPath="$PROJECT_DIR$/flipbook_admin/app/config/security.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flipbook_admin/src/AppBundle/Controller/FlipbookController.php" afterPath="$PROJECT_DIR$/flipbook_admin/src/AppBundle/Controller/FlipbookController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flipbook_admin/src/AppBundle/Repository/flipbookRepository.php" afterPath="$PROJECT_DIR$/flipbook_admin/src/AppBundle/Repository/flipbookRepository.php" />
     </list>
     <ignored path="symfony.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,16 +29,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SecurityController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flipbook_admin/vendor/friendsofsymfony/user-bundle/Controller/SecurityController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.961538">
-              <caret line="88" column="7" selection-start-line="88" selection-start-column="7" selection-end-line="88" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flipbook_admin/app/config/config.yml">
           <provider selected="true" editor-type-id="text-editor">
@@ -64,8 +52,8 @@
       <file leaf-file-name="FlipbookController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flipbook_admin/src/AppBundle/Controller/FlipbookController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.384615">
-              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+            <state vertical-scroll-proportion="-19.615385">
+              <caret line="30" column="75" selection-start-line="30" selection-start-column="75" selection-end-line="30" selection-end-column="75" />
               <folding>
                 <element signature="e#40#99#0#PHP" expanded="true" />
               </folding>
@@ -73,11 +61,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="flipbook.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/flipbook_admin/app/Resources/views/flipbook_admin/flipbook.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.31627908">
+              <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="flipbookRepository.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flipbook_admin/src/AppBundle/Repository/flipbookRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.076923">
-              <caret line="20" column="20" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="20" />
+            <state vertical-scroll-proportion="-17.0">
+              <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
               <folding>
                 <element signature="e#172#202#0#PHP" expanded="true" />
               </folding>
@@ -85,11 +83,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flipbook_admin/app/Resources/views/flipbook_admin/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2372093">
-              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+            <state vertical-scroll-proportion="-13.076923">
+              <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flipbook_admin/app/Resources/views/base.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.769231">
+              <caret line="54" column="42" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flipbook_admin/app/Resources/views/default/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.384615">
+              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -115,16 +133,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flipbook_admin/app/config/routing.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -144,7 +152,6 @@
         <option value="$PROJECT_DIR$/flipbook_admin/app/Resources/views/default/details.html.twig" />
         <option value="$PROJECT_DIR$/flipbook_admin/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/flipbook_admin/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/flipbook_admin/web/.htaccess" />
         <option value="$PROJECT_DIR$/flipbook_admin/src/AppBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/flipbook_admin/composer.json" />
@@ -158,8 +165,11 @@
         <option value="$PROJECT_DIR$/flipbook_admin/vendor/friendsofsymfony/user-bundle/Controller/SecurityController.php" />
         <option value="$PROJECT_DIR$/flipbook_admin/app/config/security.yml" />
         <option value="$PROJECT_DIR$/flipbook_admin/src/AppBundle/Repository/flipbookRepository.php" />
+        <option value="$PROJECT_DIR$/flipbook_admin/app/Resources/views/default/index.html.twig" />
         <option value="$PROJECT_DIR$/flipbook_admin/src/AppBundle/Controller/FlipbookController.php" />
         <option value="$PROJECT_DIR$/flipbook_admin/app/Resources/views/flipbook_admin/index.html.twig" />
+        <option value="$PROJECT_DIR$/flipbook_admin/app/Resources/views/flipbook_admin/flipbook.html.twig" />
+        <option value="$PROJECT_DIR$/flipbook_admin/app/Resources/views/base.html.twig" />
       </list>
     </option>
   </component>
@@ -240,6 +250,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp75\htdocs\symfony\flipbook_admin\app\Resources\views\flipbook_admin" />
       <recent name="C:\xampp75\htdocs\symfony\flipbook_admin\src\AppBundle\Controller" />
       <recent name="C:\xampp75\htdocs\symfony\flipbook_admin\app\Resources\views\default" />
       <recent name="C:\xampp75\htdocs\symfony\flipbook_admin\app\config" />
@@ -897,7 +908,7 @@
       <workItem from="1467940697368" duration="10634000" />
       <workItem from="1468212591217" duration="625000" />
       <workItem from="1468213256427" duration="18505000" />
-      <workItem from="1468468068842" duration="33993000" />
+      <workItem from="1468468068842" duration="40857000" />
     </task>
     <task id="LOCAL-00001" summary="User Registration enabled.">
       <created>1468835070022</created>
@@ -905,11 +916,17 @@
       <option name="project" value="LOCAL" />
       <updated>1468835070022</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="database requests working">
+      <created>1468921373037</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1468921373037</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64158000" />
+    <option name="totallyTimeSpent" value="71022000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1176" extended-state="6" />
@@ -926,7 +943,7 @@
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2196162" sideWeight="0.6380544" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2196162" sideWeight="0.6380544" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2196162" sideWeight="0.36194563" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -964,13 +981,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/flipbook_admin/vendor/sensio/distribution-bundle/Composer/ScriptHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57054263">
-          <caret line="390" column="30" selection-start-line="390" selection-start-column="30" selection-end-line="390" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flipbook_admin/var/cache/prod/classes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.004651">
@@ -1019,13 +1029,6 @@
         <state vertical-scroll-proportion="0.27868852">
           <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flipbook_admin/app/Resources/views/default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4744186">
-          <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1129,14 +1132,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flipbook_admin/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.02631579">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -1343,30 +1338,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flipbook_admin/src/AppBundle/Repository/flipbookRepository.php">
+    <entry file="file://$PROJECT_DIR$/flipbook_admin/app/Resources/views/default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.384615">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flipbook_admin/app/Resources/views/flipbook_admin/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.076923">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="20" />
-          <folding>
-            <element signature="e#172#202#0#PHP" expanded="true" />
-          </folding>
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/flipbook_admin/src/AppBundle/Controller/FlipbookController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.384615">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        <state vertical-scroll-proportion="-19.615385">
+          <caret line="30" column="75" selection-start-line="30" selection-start-column="75" selection-end-line="30" selection-end-column="75" />
           <folding>
             <element signature="e#40#99#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flipbook_admin/app/Resources/views/flipbook_admin/index.html.twig">
+    <entry file="file://$PROJECT_DIR$/flipbook_admin/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2372093">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        <state vertical-scroll-proportion="-9.769231">
+          <caret line="54" column="42" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flipbook_admin/src/AppBundle/Repository/flipbookRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.0">
+          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+          <folding>
+            <element signature="e#172#202#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flipbook_admin/app/Resources/views/flipbook_admin/flipbook.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31627908">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
           <folding />
         </state>
       </provider>

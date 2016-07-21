@@ -34,10 +34,8 @@
         <script src="{{ asset('js/vendor/modernizr-2.7.1.min.js') }}"></script>
     </head>
     <body>
-        <div class="book_container">
-            {% block body %}{% endblock %}
-        </div>
 
+        {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
 
         <script src="{{ asset('js/vendor/jquery-1.11.2.min.js') }}"></script>
@@ -79,6 +77,11 @@
                 });
             })
         </script>
-
+        <style>
+            .flipbook-holder { background: rgba(255, 255, 255, 0.55); padding: 10px; border-radius: 8px; display: inline-block; margin: 25px; }
+            .book_container { height: 100%; text-align: center; }
+            .flipbook-holder a { text-decoration: none}
+            h1,h2,.flipbook-title { color: rgba(37, 37, 37, 0.8); display: block; text-transform: capitalize; padding: 10px 0 5px 0; }
+        </style>
     </body>
 </html>

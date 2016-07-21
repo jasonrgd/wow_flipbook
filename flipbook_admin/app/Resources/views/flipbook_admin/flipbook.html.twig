@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <h1> Lawyers Weekly Print Issues Flipbook</h1>
+
+    <h2> {{  flipbook.name|replace({"_":" "})|capitalize }} </h2>
+<div class="book_container">
+    <div id="book">
+        <div class="cover">
+            <img src="/print_issues/{{ flipbook.name }}/{{ flipbook.image }}1.jpg" width="100%" height="100%"/>
+        </div>
+        {%  for i in 2..flipbook.pages-1 %}
+
+
+            <div><img src="/print_issues/{{ flipbook.name }}/{{ flipbook.image }}{{ i }}.jpg" width="100%" height="100%"/></div>
+
+
+        {% endfor %}
+
+        <div class="cover">
+            <img src="/print_issues/{{ flipbook.name }}/{{ flipbook.image }}{{ flipbook.pages }}.jpg" width="100%" height="100%"/>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

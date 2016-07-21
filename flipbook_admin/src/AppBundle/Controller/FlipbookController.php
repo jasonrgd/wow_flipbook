@@ -21,4 +21,13 @@ class FlipbookController extends Controller
         $allFlipbooks = $flipBookRepository->findAll();
         return $this->render('flipbook_admin/index.html.twig', [ 'flipbooks' => $allFlipbooks ]);
     }
+
+    /**
+     * @Route("/flipbook/{id}", name="flipbook_view")
+     */
+    public function viewAction($id,Request $request){
+        $flipBookRepository = $this->getDoctrine()->getRepository('AppBundle:flipbook');
+        $cuurentFlipbook = $flipBookRepository->find($id);
+        return $this->render('flipbook_admin/flipbook.html.twig',['flipbook' => $cuurentFlipbook ]);
+    }
 }
