@@ -34,7 +34,6 @@
         <script src="{{ asset('js/vendor/modernizr-2.7.1.min.js') }}"></script>
     </head>
     <body>
-
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
 
@@ -78,10 +77,13 @@
             })
         </script>
         <style>
-            .flipbook-holder { background: rgba(255, 255, 255, 0.55); padding: 10px; border-radius: 8px; display: inline-block; margin: 25px; }
+            .flipbook-holder { background: rgba(255, 255, 255, 0.25); padding: 10px; border-radius: 8px; display: inline-block; margin: 25px; }
             .book_container { height: 100%; text-align: center; }
-            .flipbook-holder a { text-decoration: none}
+            .flipbook-holder a { text-decoration: none; }
             h1,h2,.flipbook-title { color: rgba(37, 37, 37, 0.8); display: block; text-transform: capitalize; padding: 10px 0 5px 0; }
+            .headline { position: fixed; top: 75px; z-index: 99999; text-align: center; left: 50%; margin-left: -264.5px; }
+            .logo { display:block; margin: 0 auto; }
+            .logo-flipbook { position: absolute; z-index: 9999; opacity: 0.3; display: block; margin-left: -155px; bottom: 46px; left: 50%; }
         </style>
     </body>
 </html>

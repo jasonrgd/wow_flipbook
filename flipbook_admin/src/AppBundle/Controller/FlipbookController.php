@@ -26,8 +26,13 @@ class FlipbookController extends Controller
      * @Route("/flipbook/{id}", name="flipbook_view")
      */
     public function viewAction($id,Request $request){
-        $flipBookRepository = $this->getDoctrine()->getRepository('AppBundle:flipbook');
-        $cuurentFlipbook = $flipBookRepository->find($id);
-        return $this->render('flipbook_admin/flipbook.html.twig',['flipbook' => $cuurentFlipbook ]);
+        $securityContext = $this->container->get('security.authorization_checker');
+        if($securityContext->isGranted('IS_AUTHENTICATED_REMEMBERED')){
+            $flipBookRepository = $this->getDoctrine()->getRepository('AppBundle:flipbook');
+            $cuurentFlipbook = $flipBookRepository->find($id);
+            return $this->render('flipbook_admin/flipbook.html.twig',['flipbook' => $cuurentFlipbook ]);
+        } else {
+            return $this->redirect('/login');
+        }
     }
 }
