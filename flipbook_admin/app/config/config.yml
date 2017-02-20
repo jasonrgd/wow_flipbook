@@ -82,3 +82,6 @@ fos_user:
     user_class: AppBundle\Entity\User
     group:
         group_class: userBundle\Entity\Group
+    registration:
+        form:
+            type: AppBundle\Form\RegistrationType

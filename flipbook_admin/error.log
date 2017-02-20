@@ -1,0 +1,2 @@
+[Fri Aug 26 16:13:55.452011 2016] [:error] [pid 7876:tid 1636] [client 127.0.0.1:55578] PHP Fatal error:  Cannot redeclare AppBundle\\Entity\\User::setFName() in C:\\xampp\\htdocs\\symfony\\src\\AppBundle\\Entity\\User.php on line 103, referer: http://flipbook_admin/register/
+[Fri Aug 26 16:59:11.431357 2016] [:error] [pid 4064:tid 1608] [client 192.168.1.46:52301] PHP Fatal error:  Class 'AppBundle\\Form\\RegistrationType' not found in C:\\xampp\\htdocs\\symfony\\var\\cache\\dev\\appDevDebugProjectContainer.php on line 345, referer: http://flipbook_admin/login

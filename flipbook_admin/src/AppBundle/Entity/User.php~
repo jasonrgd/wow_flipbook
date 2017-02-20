@@ -1,0 +1,98 @@
+<?php
+// src/AppBundle/Entity/User.php
+
+namespace AppBundle\Entity;
+
+use FOS\UserBundle\Model\User as BaseUser;
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="fos_user")
+ */
+class User extends BaseUser
+{
+    /**
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $id;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    public $fName;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    public $lName;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    public $title;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    public $company;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    public $phone;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    public $mobile;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    public $address;
+
+
+    public function __construct()
+    {
+        parent::__construct();
+        // your own logic
+    }
+
+    public function getfName() {
+        return $this->fName;
+    }
+
+    public function getlName() {
+        return $this->lName;
+    }
+
+    public function gettitle() {
+        return $this->title;
+    }
+
+    public function getcompany() {
+        return $this->company;
+    }
+
+    public function getphone() {
+        return $this->phone;
+    }
+
+    public function getmobile() {
+        return $this->mobile;
+    }
+
+    public function getaddress() {
+        return $this->address;
+    }
+
+    public function setfName() {
+        
+    }
+
+
+
+}

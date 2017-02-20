@@ -6,24 +6,57 @@
                 {{ form_widget(form) }}
             </div>
             <div class="form-group">
-                <label for="fos_user_registration_form_email" class="required">Your e-mail </label>
+                <label for="fos_user_registration_form_email" class="required">Your e-mail * </label>
                 <input type="email" id="fos_user_registration_form_email_a" required="required" class="form-control" />
             </div>
             <div class="form-group">
-                <label for="fos_user_registration_form_username" class="required">Username </label>
+                <label for="fos_user_registration_form_f_name" class="required">First Name * </label>
+                <input type="text" id="fos_user_registration_form_fName_a" required="required" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="fos_user_registration_form_l_name" class="required">Last Name * </label>
+                <input type="text" id="fos_user_registration_form_lName_a" required="required" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="fos_user_registration_form_title" class="required">Title * </label>
+                <select id="fos_user_registration_form_title_a" required="required" class="form-control">
+                    <option value="Miss">Miss</option>
+                    <option value="Ms">Ms</option>
+                    <option value="Mrs">Mrs</option>
+                    <option value="Mr">Mr</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fos_user_registration_form_company" class="required">Company * </label>
+                <input type="text" id="fos_user_registration_form_company_a" required="required" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="fos_user_registration_form_phone" class="required">Phone Number * </label>
+                <input type="text" id="fos_user_registration_form_phone_a" required="required" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="fos_user_registration_form_mobile">Mobile Number </label>
+                <input type="text" id="fos_user_registration_form_mobile_a" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="fos_user_registration_form_address" class="required">Postal Address * </label>
+                <input type="text" id="fos_user_registration_form_address_a" required="required" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="fos_user_registration_form_username" class="required">Username * </label>
                 <input type="text" id="fos_user_registration_form_username_a" required="required" maxlength="255" pattern=".{2,}" class="form-control">
             </div>
             <div class="form-group">
-                <label for="fos_user_registration_form_plainPassword_first" class="required">Password</label>
+                <label for="fos_user_registration_form_plainPassword_first" class="required">Password * </label>
                 <input type="password" id="fos_user_registration_form_plainPassword_first_a" required="required" class="form-control">
             </div>
             <div class="form-group">
-                <label for="fos_user_registration_form_plainPassword_second" class="required">Confirm Password</label>
+                <label for="fos_user_registration_form_plainPassword_second" class="required">Confirm Password * </label>
                 <input type="password" id="fos_user_registration_form_plainPassword_second_a" required="required" class="form-control">
             </div>
 
             <div>
-                <input type="submit" value="{{ 'Register'}}" class="btn btn-primary" />
+                <input type="submit" value="{{ 'Register'}}" class="btn btn-primary" /> (*) - Required
             </div>
         {{ form_end(form) }}
     </div>
@@ -42,6 +75,27 @@
         });
         $('#fos_user_registration_form_plainPassword_second_a').change(function(){
             $('#fos_user_registration_form_plainPassword_second').val($(this).val());
+        });
+        $('#fos_user_registration_form_fName_a').change(function(){
+            $('#fos_user_registration_form_fName').val($(this).val());
+        });
+        $('#fos_user_registration_form_lName_a').change(function(){
+            $('#fos_user_registration_form_lName').val($(this).val());
+        });
+        $('#fos_user_registration_form_title_a').change(function(){
+            $('#fos_user_registration_form_title').val($(this).val());
+        });
+        $('#fos_user_registration_form_company_a').change(function(){
+            $('#fos_user_registration_form_company').val($(this).val());
+        });
+        $('#fos_user_registration_form_phone_a').change(function(){
+            $('#fos_user_registration_form_phone').val($(this).val());
+        });
+        $('#fos_user_registration_form_mobile_a').change(function(){
+            $('#fos_user_registration_form_mobile').val($(this).val());
+        });
+        $('#fos_user_registration_form_address_a').change(function(){
+            $('#fos_user_registration_form_address').val($(this).val());
         });
     });
 </script>
